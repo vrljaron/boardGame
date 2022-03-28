@@ -8,9 +8,38 @@
             margin: 0;
             overflow: hidden;
         }
+
+        .container {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
     </style>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+    <p id="field">Unknown</p>
+    <p id="player"></p>
+</div>
+<div class="fixed inset-0 flex items-center justify-center" id="modalEl" style="display: none">
+    <div class="bg-white max-w-md w-full p-3">
+        <div class="flex pb-3 justify-evenly"><p class="text-center w-1/3 pt-2">House</p>
+            <button class="bg-blue-500 text-white w-1/3 py-3 rounded-full" id="houseEl">Build</button>
+        </div>
+        <div class="flex pb-3 justify-evenly"><p class="text-center w-1/3 pt-2">Farm</p>
+            <button class="bg-blue-500 text-white w-1/3 py-3 rounded-full" id="farmEl">Build</button>
+        </div>
+        <div class="flex pb-3 justify-evenly"><p class="text-center w-1/3 pt-2">Forester</p>
+            <button class="bg-blue-500 text-white w-1/3 py-3 rounded-full" id="foresterEl">Build</button>
+        </div>
+        <div class="flex justify-evenly"><p class="text-center w-1/3 pt-2">Mine</p>
+            <button class="bg-blue-500 text-white w-1/3 py-3 rounded-full" id="mineEl">Build</button>
+        </div>
+    </div>
+</div>
 <canvas></canvas>
 <script src="script.js"></script>
 </body>
